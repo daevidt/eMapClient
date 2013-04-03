@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical" android:clickable="true">
+    <TextView android:id="@+id/status" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/commandline_header" android:textStyle="bold" android:layout_margin="10dp"></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="0"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:isScrollContainer="true"
+            android:text="@string/null_string" >
+
+</EditText>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:text="@string/hu_console_title" android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_marginLeft="10dp"></TextView>
+
+    <FrameLayout android:id="@+id/frameLayout1" android:layout_width="fill_parent" android:isScrollContainer="true" android:layout_height="fill_parent" android:layout_margin="10dp" android:background="@color/faded_gray">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/faded_gray"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:text="@string/console_default_text"
+            android:typeface="monospace" >
+</TextView>
+    </FrameLayout>
+</LinearLayout>

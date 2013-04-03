@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OK">OK</string>
+    <string name="display_map">Térkép nézet</string>
+    <string name="app_name">eMap Kliens</string>
+    <string name="commandline_header">Teszt üzemmód. Utasítás?</string>
+    <string name="connection_failed">Hiba a csatlakozáskor</string>
+</resources>
