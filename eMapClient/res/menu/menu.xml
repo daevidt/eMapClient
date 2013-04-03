@@ -1,17 +1,17 @@
 
     <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item android:id="@+id/exit"
-            android:title="@string/hu_exit"
+            android:title="@string/exit"
             android:menuCategory="system"
             android:orderInCategory="4"
             ></item>
         <item android:id="@+id/server_addr"
-            android:title="@string/hu_server_addr"
+            android:title="@string/server_addr"
             android:menuCategory="system"
             android:orderInCategory="3"
             ></item>
         <item android:id="@+id/connect"
-            android:title="@string/hu_connect"
+            android:title="@string/connect"
             android:menuCategory="system"
             android:orderInCategory="2"
             ></item>

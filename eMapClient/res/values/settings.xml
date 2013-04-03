@@ -1,0 +1,5 @@
+
+    <resources>
+        <string name="serverAddress">192.168.0.160</string>
+        <item name="serverPort" type="integer" format="integer">37452</item>
+    </resources>

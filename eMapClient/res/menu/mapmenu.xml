@@ -1,7 +1,7 @@
 
     <menu xmlns:android="http://schemas.android.com/apk/res/android">
 		<item android:id="@+id/exit"
-            android:title="@string/hu_exit"
+            android:title="@string/exit"
             android:menuCategory="system"
             android:orderInCategory="4"
             ></item>

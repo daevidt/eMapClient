@@ -29,8 +29,8 @@ import android.widget.Toast;
 public class eMapClientMain extends Activity {
     /** Called when the activity is first created. */
 	
-	private int serverPort = 37452;
-	private String serverAddress = "192.168.0.160"; //"86.101.211.43";
+	private int serverPort = R.integer.serverPort;
+	private String serverAddress = getString(R.string.serverAddress);
 	private Socket serverSocket = null;
 	private DataOutputStream dataSend = null;
 	private DataInputStream dataReceive = null;
@@ -238,7 +238,7 @@ public class eMapClientMain extends Activity {
     	 //create dialog
          return new AlertDialog.Builder(eMapClientMain.this)
              .setIcon(R.drawable.icon)
-             .setTitle(R.string.hu_server_addr)
+             .setTitle(R.string.server_addr)
              .setView(textEntryView)
              .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                  public void onClick(DialogInterface dialog, int whichButton) {
@@ -252,7 +252,7 @@ public class eMapClientMain extends Activity {
                 	 }
                  }
              })
-             .setNegativeButton(R.string.hu_cancel, new DialogInterface.OnClickListener() {
+             .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                  public void onClick(DialogInterface dialog, int whichButton) {
 
                      /* User clicked cancel so do some stuff */
