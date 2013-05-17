@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="OK">OK</string>
-    <string name="display_map">Térkép nézet</string>
-    <string name="app_name">eMap Kliens</string>
-    <string name="commandline_header">Teszt üzemmód. Utasítás?</string>
-    <string name="connection_failed">Hiba a csatlakozáskor</string>
+    <string name="app_name">eMap Kliens</string><string name="exit">Kilépés</string><string name="cancel">Mégse</string><string name="commandline_header">Teszt üzemmód. Utasítás?</string><string name="connection_failed">Hiba a csatlakozáskor</string>
+    
+    
+    
+    
+    <string name="server_addr">Szerver címe</string>
+    
+    <string name="server_port">Szerver port</string>
+    <string name="connect">Csatlakozás</string><string name="display_map">Térkép nézet</string>
+    <string name="ok">OK</string>
+    <string name="console_default_text">&gt;</string>
+    <string name="null_string"/>
 </resources>

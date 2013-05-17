@@ -5,7 +5,7 @@
             android:id="@+id/text_server_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name" >
+            android:text="@string/server_addr" >
 </TextView>
 
         <EditText
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/app_name" >
+            android:text="@string/server_port" >
 </TextView>
 
         <EditText

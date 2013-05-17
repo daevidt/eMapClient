@@ -18,14 +18,6 @@
 </EditText>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="@string/app_name" >
-</TextView>
-
     <FrameLayout android:id="@+id/frameLayout1" android:layout_width="fill_parent" android:isScrollContainer="true" android:layout_height="fill_parent" android:layout_margin="10dp" android:background="@color/faded_gray">
 
         <TextView

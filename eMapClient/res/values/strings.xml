@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, eMapClientMain!</string>
     <string name="app_name">eMap Client</string>
-    <string name="ok">OK</string>
-    <color name="faded_gray">#303030</color>
-    <string name="console_default_text">&gt;</string>
-    <string name="null_string"></string>
-    <string name="commandline_header">Test Mode. Ready.</string>
-    <string name="exit">Kilépés</string>
-    <string name="server_addr">Szerver címe</string>
-    <string name="cancel">Mégse</string>
-    <string name="server_port">Szerver port</string>
-    <string name="connect">Csatlakozás</string>
-    <string name="console_title">Konzol</string>
-    <item format="dimension" name="margin_left" type="integer">10px</item>
+    <string name="exit">Exit</string><string name="ok">OK</string>
+    <string name="cancel">Cancel</string><string name="console_default_text">&gt;</string>
+    <string name="null_string"></string><string name="commandline_header">Test Mode. Ready.</string>
+    
+    
+    <string name="connection_failed">Connection Failed</string><string name="server_addr">Server Address</string>
+    
+    <string name="server_port">Server port</string>
+    <string name="connect">Connect</string>
+    
     <string name="display_map">Map View</string>
-    <string name="connection_failed">Connection Failed</string>
+    <color name="faded_gray">#303030</color>
+    
 
 </resources>

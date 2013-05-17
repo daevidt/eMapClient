@@ -29,8 +29,8 @@ import android.widget.Toast;
 public class eMapClientMain extends Activity {
     /** Called when the activity is first created. */
 	
-	private int serverPort = R.integer.serverPort;
-	private String serverAddress = getString(R.string.serverAddress);
+	private int serverPort;
+	private String serverAddress;
 	private Socket serverSocket = null;
 	private DataOutputStream dataSend = null;
 	private DataInputStream dataReceive = null;
@@ -51,6 +51,9 @@ public class eMapClientMain extends Activity {
         setContentView(R.layout.main);
 
         //initialize
+  		serverAddress = getString(R.string.serverAddress);
+  		serverPort = R.integer.serverPort;
+  
         console = (TextView) findViewById(R.id.textView2);
         console.setMovementMethod(new ScrollingMovementMethod());
         
@@ -95,6 +98,7 @@ public class eMapClientMain extends Activity {
 		});
         
      }
+    
     protected void sendText(String textToSend)
     {
     	try{
@@ -232,8 +236,8 @@ public class eMapClientMain extends Activity {
          // initialize form with current values
          EditText s_addr = (EditText)textEntryView.findViewById(R.id.edit_server_address);
     	 EditText s_port = (EditText)textEntryView.findViewById(R.id.edit_server_port);
-         s_addr.setText(serverAddress);
-    	 s_port.setText(Integer.toString(serverPort));
+         s_addr.setText(this.serverAddress);
+    	 s_port.setText(this.serverPort);
          
     	 //create dialog
          return new AlertDialog.Builder(eMapClientMain.this)
@@ -241,7 +245,8 @@ public class eMapClientMain extends Activity {
              .setTitle(R.string.server_addr)
              .setView(textEntryView)
              .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                 public void onClick(DialogInterface dialog, int whichButton) {
+                 @Override
+				public void onClick(DialogInterface dialog, int whichButton) {
                 	 //Accepted changes, set them
                 	 if (whichButton == DialogInterface.BUTTON_POSITIVE)
                 	 {
@@ -253,9 +258,10 @@ public class eMapClientMain extends Activity {
                  }
              })
              .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                 public void onClick(DialogInterface dialog, int whichButton) {
+                 @Override
+				public void onClick(DialogInterface dialog, int whichButton) {
 
-                     /* User clicked cancel so do some stuff */
+                     // User clicked cancel so do some stuff 
                  }
              })
              .create();
@@ -264,5 +270,5 @@ public class eMapClientMain extends Activity {
 		return null;
     }
     
- 
+
 }
